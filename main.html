@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="logo-avatar">LOGO/AVATAR</div>
+                <img id="logoAvatarImage" src="Asset/still.jpeg" width="640" height="360" alt="Initial Image">
+            </div>
+            <div class="right-panel">
+                AVATAR
+                <div id="videoPlayer">
+                </div>
+            </div>
+        </div>
+        <div id="videoTitle">Video Title Here</div>
+        <input type="text" id="videoNames" class="inputs" placeholder="Type something...">
+    </div>
+    <div class="controls">
+        <button class="btn mic-btn" onclick="record()">
+            <img src="M1.png" alt="Microphone">
+        </button>        
+        <button class="btn play-btn" onclick="playVideos()">
+            <img src="P1.png" alt="Play">
+        </button>
+    </div>
+    <div id="playbackButtons" style="display:none;">
+        <button id="btnSlow" onclick="setPlaybackSpeed(0.5)">x0.5</button>
+        <button id="btnNormal" onclick="setPlaybackSpeed(1)">x1</button>
+        <button id="btnFast" onclick="setPlaybackSpeed(2)">x2</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
